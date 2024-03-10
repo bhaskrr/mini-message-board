@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <section class="form-container">
+      <h1>Add a new message</h1>
+      <form class="form" action="./new" method="POST">
+        <label for="author"
+          >Enter your name:
+          <input type="text" name="author" id="author" required />
+        </label>
+        <br><br>
+        <label for="message"
+          >Enter your message
+          <input type="text" name="message" id="message" required />
+        </label>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
